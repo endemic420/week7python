@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+h1 {
+  color: #396afc;
+  margin-bottom: 20px;
+}
+
+.animated-button {
+  background-color: #396afc;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  position: relative;
+}
+
+.animated-button:hover {
+  background-color: #2948c5;
+}
+
+/* Animation keyframes */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }    
+  40% {
+    transform: translateY(-20px);
+  }    
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Class to trigger animation */
+.bounce {
+  animation: bounce 1s ease;
+}
+
+#preferenceText {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+#inputColor {
+  margin-top: 20px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 150px;
+}
